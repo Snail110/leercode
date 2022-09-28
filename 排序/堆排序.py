@@ -46,7 +46,7 @@ for i in range(len//2-1,-1,-1):
 
 class Solution:
     def heapSort(self, nums: list):
-
+        # 堆排序
         size = len(nums)
 
         self.build_heap(nums, size)
@@ -62,17 +62,20 @@ class Solution:
     def build_heap(self, nums: list, i):
         # 大顶堆的构建
         size = len(nums[:i])
+        # 非叶子节点
         for i in range(size//2-1, -1, -1):
             self.adjust_heap(i, nums, size)
         return nums
 
     def adjust_heap(self, index: int, nums: list, l: int):
+        # 调整大/小顶推
         left = index * 2 + 1    # 左节点
         right = index * 2 + 2   # 右节点
         father_index = index
+        # 大于是大顶堆，小于是小顶堆 nums[left] < nums[father_index] =>小顶堆,nums[left] > nums[father_index] =>小顶堆
         if left < l and nums[left] < nums[father_index]:
             father_index = left
-
+        # 大于是大顶堆，小于是小顶堆
         if right < l and nums[right] < nums[father_index]:
             father_index = right
 
