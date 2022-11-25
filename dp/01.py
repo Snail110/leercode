@@ -20,7 +20,18 @@
 strs[i] 仅由 '0' 和 '1' 组成
 1 <= m, n <= 100
 
-转化为01背包，求最大值肯定有max()，
+转化为01背包，求最大值肯定有max()
+1、定义dp[i][j]：包含i个0和j个1，最大子集为dp[i][j],物品是strs，背包是0和1的数量
+2、递推公式: dp[i][j] = max(dp[i][j],dp[i-str[s][0]][j-str[s][1]] + 1)
+3、初始化：dp[0][0] = 0,dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
+4、遍历顺序：
+for s in strs:
+s_0 = count('0')
+s_1 = count('1')
+for i in range(m,s_0-1,-1):
+for j in range(n,s_1-1,-1):
+dp[i][j] = max(dp[i][j],dp[i-s_0][j-s_1] + 1)
+
 """
 class Solution:
     def zero_and_one(self,strs:list,m:int,n:int):
