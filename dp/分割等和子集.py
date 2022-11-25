@@ -17,8 +17,15 @@
 转化背包问题：
 分为两个等和sum/2的 区间,分割为2个子集，只要其中区间的和为sum/2就可以
 
-dp[j] 表示背包提及为j的，最大能凑成和为j的子集
-这里不关心最大，只关心dp[sum/2]是否存在，如果存在那么就有答。
+1、dp[j] 表示背包为j，最大是否能凑成和为dp[j]
+2、dp[j] = max(dp[j],dp[j-nums[i]] + nums[i])
+3、初始化 dp = [0] * (len(nums)/2+1)
+4、遍历顺序：
+for i in range(len(nums)):
+for j in range(sum/2,nums[i]-1,-1):
+dp[j] = dp[j-nums[i]]
+5、返回 dp[len(nums)/2] == len(nums)/2 证明恰好是否为最大
+这里不关心最大，只关心dp[sum/2]
 """
 
 class Solution:

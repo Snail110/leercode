@@ -23,28 +23,19 @@ if nums[i+1] > nums[i]:dp[i+1] = dp[i]+1
 dp[i] = 1
 
 """
-
 class Solution:
-    def max_len_sim_nums(self,nums:list):
-        """
-
-        :param nums:
-        :return:
-        """
-
-        # init
-        len_ = len(nums)
-        dp = [1] * (len_ + 1)
+    def max_len_up_sub_list(self,nums:list):
+        """"""
+        # init dp dp[0] = 1
+        n = len(nums)
+        dp = [1] * n
         res = 0
-        for i in range(len_-1):
-            if nums[i+1] > nums[i]:
-                dp[i+1] = dp[i] + 1
-                res = max(res,dp[i+1])
+        # 递推公式 if nums[i] > nums[i-1] : dp[i] = d[i-1] + 1
+        for i in range(1,n):
+            if nums[i] > nums[i-1]:
+                dp[i] = dp[i-1] + 1
+                res = max(res,dp[i])
         return res
 s = Solution()
-
 nums = [1,3,5,4,7]
-
-print(s.max_len_sim_nums(nums))
-
-
+print(s.max_len_up_sub_list(nums))
