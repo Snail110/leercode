@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="22e25ab5-a66f-46a7-a7d6-182d14a4ec91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leercode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leercode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/01.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/01背包.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/01背包.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/不同搜索二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.11不同搜索二叉树.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/不同路径.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/分割等和子集.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/回文串数量.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.12回文串数量.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/回文子串.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.13回文子串.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/完全背包.md" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.14完全背包.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/拆分正整数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/接雨水.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.15接雨水.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最小石头.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.16最小石头.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最小路径和.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.17最小路径和.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最长上升子序列.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.18最长上升子序列.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最长公共子序列.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.19最长公共子序列.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最长公共子数组.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.20最长公共子数组.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最长回文子串.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.21最长回文子串.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/最长连续递增序列.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.22最长连续递增序列.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/爬楼梯2.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.23爬楼梯2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/目标和.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.24目标和.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/组合总和2.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.25组合总和2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/花费最小爬楼梯.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.26花费最小爬楼梯.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/零钱兑换 II.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/8.动态规划/8.27零钱兑换 II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉搜索时的插入操作.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.14二叉搜索时的插入操作.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉搜索树的众数.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.15二叉搜索树的众数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉搜索树的删除.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.16二叉搜索树的删除.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉搜索树的搜索.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.17二叉搜索树的搜索.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉搜索树的最近公共祖先.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.18二叉搜索树的最近公共祖先.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树所有路径.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.19二叉树所有路径.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树最大深度.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.20二叉树最大深度.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树最小深度.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.21二叉树最小深度.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树最近公共祖先.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.22二叉树最近公共祖先.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的最大路径和.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.23二叉树的最大路径和.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/二叉树的最小绝对差.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.24二叉树的最小绝对差.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/反转二叉树.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/合并二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.25合并二叉树.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/完全二叉树的节点个数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/对称二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.26二叉树是否对称.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/层序遍历.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/左叶子.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/平衡二叉树.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/最大二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.27最大二叉树.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/构建二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.28构建二叉树.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/树左下角值.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.29树左下角值.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/深度遍历.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.30深度遍历.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/深度遍历迭代.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.31深度遍历迭代.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/路径总和.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/二叉树/验证二叉搜索树.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/5.二叉树/5.31验证二叉搜索树.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/代码随想录/2.链表/2.3移除链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/2.链表/2.3移除链表.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/双指针/三数之和.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/双指针/三颜色球排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/3.双指针/三颜色球排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/双指针/移除数组.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/3.双指针/移除数组.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯/pow(x,n).py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/6.回溯/6.10pow(x,n).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯/全排列.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/6.回溯/全排列.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯/单词搜索2.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/6.回溯/单词搜索2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯/整数组合.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/6.回溯/整数组合.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯/蛇形遍历.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/6.回溯/蛇形遍历.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/回溯/递增子序列.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/6.回溯/递增子序列.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/字符串/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/字符串/反转字符串.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/字符串/反转字符串中单词.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/字符串/替换字符串.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/4.字符串/替换字符串.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/排序/堆排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/9.排序算法/9.4堆排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/排序/归并排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/9.排序算法/9.5归并排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/排序/快速排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/9.排序算法/9.6快速排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/map降序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/map降序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/x的平方根.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/x的平方根.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/三数之和.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/三数之和.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/两数组排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/两数组排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/二分查找.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/二分查找.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/交换位置最小数.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/交换位置最小数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/多数组排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/多数组排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/有序数组的平方.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/有序数组的平方.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数组/长度最小的子数组.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码随想录/1.数组/长度最小的子数组.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/链表/反转链表.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/链表/移除链表元素.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/链表/链表相交.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2I7nGSfikIXkVnOFJMeaeAIIGHP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\python\leercode\代码随想录\6.回溯" />
+      <recent name="F:\python\leercode\代码随想录\5.二叉树" />
+      <recent name="F:\python\leercode\代码随想录\4.字符串" />
+      <recent name="F:\python\leercode\代码随想录\3.双指针" />
+      <recent name="F:\python\leercode\代码随想录\2.链表" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22e25ab5-a66f-46a7-a7d6-182d14a4ec91" name="Default Changelist" comment="" />
+      <created>1669541393517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669541393517</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
