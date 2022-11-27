@@ -48,21 +48,17 @@ class Solution:
         :param nums:
         :return:
         """
-        if len(nums) <= 1:
-            return len(nums)
-        # init
-        len_ = len(nums)
-        dp = [1] * (len_+1)
-        res = 0
-        for i in range(1,len_):
-            for j in range(i):
+        n = len(nums)
+        dp = [1] * n    # 初始值为1
+        dp[0] = 1
+        for i in range(1,n):
+            for j in range(0,i):
                 if nums[i] > nums[j]:
-                    dp[i] = max(dp[i],dp[j]+1)
-                if dp[i] > res:
-                    res = dp[i]
-        return dp
+                    dp[i] = max(dp[i],dp[j] + 1)
 
-nums = [0,1,3,4,5,6]
+        return dp[-1]
+
+nums = [10,9,2,5,3,7,101,18]
 
 s = Solution()
 print(s.max_len_nums(nums))

@@ -14,15 +14,16 @@ class Solution:
         :param nums:
         :return:
         """
-        que = []    # 降序排列的双向队列,保存这个index
-        res = []    # 保存窗口最大值
+        que = [nums[0]]    # 降序排列的双向队列,保存这个index
+        res = [nums[0]]    # 保存窗口最大值
         len_ = len(nums)
 
         for i in range(k):
-            if res and nums[i] > res[0]:
-                res.append(nums[i])
+            if nums[i] > res[0]:
+                que[0] = i
+                res[0] = nums[i]
 
-        for i in range(k-1,len_):
+        for i in range(k,len_):
             # 保证 que不为空，并且当前的值大于que最后一个值，那么将最后一个值淘汰，然后知道遇到比当前值大的值
             while que and nums[i] > nums[que[-1]]:
                 que.pop()

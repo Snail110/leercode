@@ -17,12 +17,12 @@ class Solution:
         :return:
         """
         # 终止条件
-        if len(path) == 3:
+        if len(path) == len(nums):
             res.append(path[:])
             return
 
         for i in range(len(nums)):
-            # 如果前一个i没用过，并且nums[i] = nums[i-1]
+            # 如果前一个i没用过，并且nums[i] = nums[i-1],used[i-1]==0表示同层去重复，used[i-1]==1表示同树枝去重复
             if i > 0 and nums[i] == nums[i-1] and used[i-1] == 0:
                 continue
             if used[i] == 0:

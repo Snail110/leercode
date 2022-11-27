@@ -4,32 +4,86 @@ K=10，nums=[1,2,3]
 回溯方法
 """
 class Solution:
-    def numsK(self,nums:list,target:int,result:list,path:list):
+    def inter_combine(self,nums:list,res:list,path:list,target:int):
+        """
+
+        :param nums:
+        :param res:
+        :param path:
+        :return:
+        """
         # 终止条件
         if target <= 0:
             if target == 0:
-                result.append(path[:])
+                res.append(path[:])
             return
-
-        # 单层回溯逻辑
+        # 回溯逻辑
         for i in range(len(nums)):
             target -= nums[i]
             path.append(nums[i])
-            self.numsK(nums,target,result,path)
+            self.inter_combine(nums,res,path,target)
             target += nums[i]
             path.pop()
 
-        return result
+        return res
+
+    def inter_combine2(self,nums:list,res:list,path:list,target:int,start_index:int):
+        """
+        不重复的元素
+        :param nums:
+        :param res:
+        :param path:
+        :return:
+        """
+        # 终止条件
+        if target <= 0:
+            if target == 0:
+                res.append(path[:])
+            return
+        # 回溯逻辑
+        for i in range(start_index,len(nums)):
+            target -= nums[i]
+            path.append(nums[i])
+            self.inter_combine2(nums,res,path,target, i+1)
+            target += nums[i]
+            path.pop()
+
+        return res
+
+    def inter_combine3(self,nums:list,res:list,path:list,target:int,start_index:int):
+        """
+        不重复的组合
+        :param nums:
+        :param res:
+        :param path:
+        :return:
+        """
+        # 终止条件
+        if target < 0:
+            return
+        if target == 0:
+            res.append(path[:])
+            return
+        # 回溯逻辑
+        for i in range(start_index,len(nums)):
+            target -= nums[i]
+            path.append(nums[i])
+            self.inter_combine3(nums,res,path,target, i)
+            target += nums[i]
+            path.pop()
+
+        return res
 
     def main(self,nums:list,target:int):
-        # 排序
-        nums_sort = sorted(nums)
+        if len(nums) == 0:
+            return None
+
+        res = []
         path = []
-        result = []
-        self.numsK(nums_sort,target,result,path)
-        return result
-
-
+        # self.inter_combine(nums,res,path,target)
+        # self.inter_combine2(nums,res,path,target,0)
+        self.inter_combine3(nums,res,path,target,0)
+        return res
 s = Solution()
 
 nums = [1,2,3]

@@ -16,55 +16,40 @@
 4．再重复执行2，3二步，直到i==j，将基准数填入a[i]中。
 
 """
-
-class Solution:
-    def quickSort(self,nums:list):
-        # 终止条件
-        if len(nums) < 2:
-            return nums
-
-        mid = nums[len(nums)//2]
-
-        left = []
-        right = []
-        nums.remove(mid)
-
-        for i in nums:
-            if i < mid:
-                left.append(i)
-            else:
-                right.append(i)
-        return self.quickSort(left) + [mid] + self.quickSort(right)
-
 class Solution1:
-    def partition(self,nums, low, high):
-        pivot = nums[high] # 以最右边的设置基准 那么计算low,high-1 之间的数据
-        index = low - 1
+    def partiton(self, nums, low, high):
+        pivot = nums[high]
 
-        for j in range(low,high):
-            if nums[j] < pivot:
-                index += 1 # 索引右移
-                nums[index],nums[j] = nums[j],nums[index] # 交换将小于基准的元素转移到左边
-        # 这个时候小于pivot的元素在左边，大于pivot的数据在右边，然后将piovt也要加进去，那么与index+1（即肯定大于pivot）交换一下
+        index = low - 1
+        for i in range(low,high):
+            if nums[i] < pivot:
+                index += 1
+                nums[index],nums[i] = nums[i],nums[index]
+
         index += 1
-        nums[index], nums[high] = nums[high], nums[index]  # 交换将小于基准的元素转移到左边
-        # 返回index
+        nums[index], nums[high] = nums[high], nums[index]
         return index
 
     def quick_sort(self,nums,low,high):
+        """
+        递归+分而治之思想，
+        :param nums:
+        :param low:
+        :param high:
+        :return:
+        """
+        # 终止条件 low < high
         if low < high:
-            pivot = self.partition(nums,low,high)
-            print(nums)
-            # 去除pivot这个值
-            self.quick_sort(nums, low, pivot - 1)
-            self.quick_sort(nums, pivot + 1, high)
-        return nums
+            # 计算出分而治之的界限 pi
+            pi = self.partiton(nums,low,high)
+            # 去除pi界限
+            self.quick_sort(nums,low,pi-1)
+            self.quick_sort(nums,pi+1,high)
 
-
-
-s = Solution()
-nums = [1,3,2,5,4]
-print(s.quickSort(nums))
+# s = Solution()
+nums = [1,3,2,5,4,6,3]
+# print(s.quickSort(nums))
 
 s1 = Solution1()
-print(s1.quick_sort(nums,0,len(nums)-1))
+s1.quick_sort(nums,0,len(nums)-1)
+print(nums)
