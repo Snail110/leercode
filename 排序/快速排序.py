@@ -36,8 +36,35 @@ class Solution:
                 right.append(i)
         return self.quickSort(left) + [mid] + self.quickSort(right)
 
+class Solution1:
+    def partition(self,nums, low, high):
+        pivot = nums[high] # 以最右边的设置基准 那么计算low,high-1 之间的数据
+        index = low - 1
+
+        for j in range(low,high):
+            if nums[j] < pivot:
+                index += 1 # 索引右移
+                nums[index],nums[j] = nums[j],nums[index] # 交换将小于基准的元素转移到左边
+        # 这个时候小于pivot的元素在左边，大于pivot的数据在右边，然后将piovt也要加进去，那么与index+1（即肯定大于pivot）交换一下
+        index += 1
+        nums[index], nums[high] = nums[high], nums[index]  # 交换将小于基准的元素转移到左边
+        # 返回index
+        return index
+
+    def quick_sort(self,nums,low,high):
+        if low < high:
+            pivot = self.partition(nums,low,high)
+            print(nums)
+            # 去除pivot这个值
+            self.quick_sort(nums, low, pivot - 1)
+            self.quick_sort(nums, pivot + 1, high)
+        return nums
+
 
 
 s = Solution()
 nums = [1,3,2,5,4]
 print(s.quickSort(nums))
+
+s1 = Solution1()
+print(s1.quick_sort(nums,0,len(nums)-1))

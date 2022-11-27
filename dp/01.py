@@ -19,35 +19,35 @@
 1 <= strs[i].length <= 100
 strs[i] 仅由 '0' 和 '1' 组成
 1 <= m, n <= 100
+
+转化为01背包，求最大值肯定有max()，
 """
-
 class Solution:
-    def maxStr(self,strs:list,m:int,n:int):
-        # 初始化
-        maxOnesNums = 0
-        maxZerosNums = 0
-        for s in strs:
-            maxZerosNums += s.count('0')
-            maxOnesNums += s.count('1')
-        dp = [[0 for _ in range(maxOnesNums+1)] for _ in range(maxZerosNums+1)]
+    def zero_and_one(self,strs:list,m:int,n:int):
+        """
 
-        # 递归公式 dp[i][j]  =  max(dp[i][j],dp[i-ZerosNums][j-OnesNums] + 1)
-        for s in strs:
-            ZerosNums = 0
-            OnesNums = 0
-            ZerosNums += s.count('0')
-            OnesNums += s.count('1')
-            for i in range(maxZerosNums,ZerosNums-1,-1):
-                for j in range(maxOnesNums,OnesNums-1,-1):
-                    dp[i][j] = max(dp[i][j], dp[i - ZerosNums][j - OnesNums] + 1)
+        :param strs:
+        :param m:
+        :param n:
+        :return:
+        """
+        # init
+        dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
+
+
+        for s in range(len(strs)):
+            zero = strs[s].count('0')
+            one = strs[s].count('1')
+            for i in range(m,zero-1,-1):
+                for j in range(n,one-1,-1):
+                    dp[i][j] = max(dp[i][j],dp[i-zero][j-one] + 1)
 
         return dp[m][n]
-
 
 # strs = ["10", "0", "1"]
 # m = 1
 # n = 1
 strs = ["10", "0001", "111001", "1", "0"]
-m = 5
+m = 3
 n = 3
-print(Solution().maxStr(strs,m,n))
+print(Solution().zero_and_one(strs,m,n))
