@@ -30,7 +30,7 @@ class Solution:
         maxreach = 0
         lastjump = 0
         steps = 0
-        for i in range(len(nums)):
+        for i in range(len(nums)-1):
             # 在i走到下一个最大步之前，steps都是一样的，i在最大步范围内都是可以随便到达的。
             maxreach = max(maxreach,nums[i] + i)
             if i == lastjump:

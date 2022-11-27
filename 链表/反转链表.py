@@ -26,4 +26,4 @@ head.next.next = ListNode(2)
 head.next.next.next = ListNode(3)
 
 s = Solution()
-s.reverse(head)
+print(s.reverse(head).val)

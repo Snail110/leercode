@@ -1,3 +1,11 @@
+"""
+给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
+
+说明: 叶子节点是指没有子节点的节点。
+
+示例:  给定如下二叉树，以及目标和 sum = 22
+
+"""
 class TreeNode:
     def __init__(self,value):
         self.value = value
@@ -5,71 +13,45 @@ class TreeNode:
         self.right = None
 # 112 路径总和
 class Solution:
-    def inSumPath(self,root:TreeNode,count:int):
+    def path_sum_equal_target(self,root:TreeNode,res:int,target:int):
+        """
 
-        # 终止条件
-        if count == 0 and root.left == None and root.right == None:
+        :param root:
+        :param res:
+        :param target:
+        :return:
+        """
+        # 前序遍历
+        if root.right is None and root.left is None and res == target:
             return True
-
-        # 单层回溯逻辑
-        if root.left:
-            count -= root.left.value
-            # 及时返回值
-            if self.inSumPath(root.left,count):
-                return True
-            count += root.left.value
-
-        if root.right:
-            count -= root.right.value
-            # 及时返回值
-            if self.inSumPath(root.right,count):
-                return True
-            count += root.right.value
-        return False
-
-    def main(self,root:TreeNode,count:int):
-        if root == None:
+        if root.right is None and root.left is None and res != target:
             return False
 
-        return self.inSumPath(root,count - root.value)
+        if root.left:
+            res += root.left.value
+            if self.path_sum_equal_target(root.left,res,target):
+                return True
+            res -= root.left.value
 
-# 113路径总和2
-# class Solution:
-#     def inSumPath(self,root:TreeNode,count:int,result:list,path:list):
-#
-#         # 终止条件
-#         if count == 0 and root.left == None and root.right == None:
-#             result.append(path[:])
-#
-#         # 单层回溯逻辑
-#         if root.left:
-#             count -= root.left.value
-#             path.append(root.left.value)
-#             self.inSumPath(root.left,count,result,path)
-#             count += root.left.value
-#             path.pop()
-#
-#         if root.right:
-#             count -= root.right.value
-#             path.append(root.right.value)
-#             self.inSumPath(root.right,count,result,path)
-#             path.pop()
-#         return result
-#
-#     def main(self,root:TreeNode,count:int):
-#         if root == None:
-#             return []
-#         result = []
-#         path = []
-#         path.append(root.value)
-#         count = count - root.value
-#         result = self.inSumPath(root,count,result,path)
-#         return result
+        if root.right:
+            res += root.right.value
+            if self.path_sum_equal_target(root.right,res,target):
+                return True
+            res -= root.right.value
+
+        return False
+
+    def main(self,root:TreeNode,target:int):
+        if root is None:
+            return False
+        res = root.value
+        flag = self.path_sum_equal_target(root,res,target)
+        return flag
 root = TreeNode(1);root.right = TreeNode(2);root.left = TreeNode(2)
 
 root.right.left = TreeNode(4);root.right.right = TreeNode(7)
 root.left.left = TreeNode(4);root.left.right = TreeNode(7)
 
 s = Solution()
-count = 9
+count = 10
 print(s.main(root,count))
